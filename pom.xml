@@ -17,5 +17,23 @@
   </dependencies>
   <build>
     <finalName>hangman</finalName>
+    <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                  <source>8</source>
+                  <target>8</target>
+              </configuration>
+          </plugin>
+          <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>exec-maven-plugin</artifactId>
+              <version>3.2.0</version>
+              <configuration>
+                  <mainClass>Main</mainClass>
+              </configuration>
+          </plugin>
+      </plugins>
   </build>
 </project>
